@@ -4,10 +4,13 @@ import pickle
 import os
 
 # Load the trained model
-model_path = r'F:\Anaconda\bigmart pred\big_model.pkl'
+#model_path = r'F:\Anaconda\bigmart pred\big_model.pkl'
+#model = pickle.load(open(model_path, 'rb'))
+
+model_path = 'big_model.pkl' # or model_path = os.path.join(os.path.dirname(__file__), 'big_model.pkl')
 model = pickle.load(open(model_path, 'rb'))
 
-model = pickle.load(open(model_path, 'rb'))
+
 
 # Create Flask app
 app = Flask(__name__)
